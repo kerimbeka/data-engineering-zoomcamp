@@ -7,12 +7,12 @@
 with green_taxi as (
     select *, 
         'Green' as service_type
-    from {{ ref('stg_green_taxi') }}
+    from {{ ref('stg_green_tripdata') }}
 ), 
 yellow_taxi as (
     select *, 
         'Yellow' as service_type
-    from {{ ref('stg_yellow_taxi') }}
+    from {{ ref('stg_yellow_tripdata') }}
 ), 
 trips_unioned as (
     select * from green_taxi
