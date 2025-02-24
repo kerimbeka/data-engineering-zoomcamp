@@ -1,0 +1,12 @@
+ny_taxi:
+  outputs:
+    dev:
+      dbname: ny_taxi
+      host: localhost
+      pass: root
+      port: 5432
+      schema: dbt_bekzhan
+      threads: 10
+      type: postgres
+      user: root
+  target: dev

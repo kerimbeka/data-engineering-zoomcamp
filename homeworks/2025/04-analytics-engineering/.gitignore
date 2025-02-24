@@ -1,0 +1,7 @@
+
+target/
+dbt_packages/
+logs/
+data/
+.venv/
+ny_taxi_postgres_data/
